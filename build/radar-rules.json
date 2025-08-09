@@ -12,6 +12,20 @@
       }
     ]
   },
+  "121.com.cn": {
+    "_name": "深圳台风网",
+    "tf": [
+      {
+        "title": "深圳天气直播",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/",
+          "/web/weatherLive"
+        ],
+        "target": "/121/weatherLive"
+      }
+    ]
+  },
   "163.com": {
     "_name": "网易公开课",
     "ds": [
@@ -7558,6 +7572,27 @@
       }
     ]
   },
+  "capitalmind.in": {
+    "_name": "Capitalmind",
+    ".": [
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/insights"
+        ],
+        "target": "/capitalmind/insights"
+      },
+      {
+        "title": "Podcasts",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/podcasts"
+        ],
+        "target": "/capitalmind/podcasts"
+      }
+    ]
+  },
   "cara.app": {
     "_name": "Cara",
     ".": [
@@ -10773,17 +10808,24 @@
       }
     ]
   },
-  "coomer.su": {
+  "coomer.st": {
     "_name": "Coomer",
     ".": [
       {
         "title": "Posts",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/:source/user/:id",
           "/"
         ],
         "target": "/coomer/:source?/:id?"
+      },
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:source/user/:id"
+        ],
+        "target": "/coomer/:source/:id"
       }
     ]
   },
@@ -11361,7 +11403,7 @@
   },
   "cursor.com": {
     "_name": "Cursor",
-    "www": [
+    ".": [
       {
         "title": "Changelog",
         "docs": "https://docs.rsshub.app/routes/program-update",
@@ -12283,6 +12325,27 @@
           "/blog"
         ],
         "target": "/deltaio/blog"
+      }
+    ]
+  },
+  "dev.to": {
+    "_name": "DEV Community",
+    ".": [
+      {
+        "title": "Trending Guides",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/dev.to/guides"
+      },
+      {
+        "title": "Top Posts",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/top/:period"
+        ],
+        "target": "/dev.to/top/:period"
       }
     ]
   },
@@ -13325,6 +13388,115 @@
           "/tag/:tag"
         ],
         "target": "/everia/tag/:tag"
+      }
+    ]
+  },
+  "expats.cz": {
+    "_name": "Expats.cz",
+    "www": [
+      {
+        "title": "Czech News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/:category"
+        ],
+        "target": "/expatsparams=>{const category=params.category;return`/expats/czech-news${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "Daily News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/daily-news"
+        ],
+        "target": "/expats/expats/czech-news/daily-news"
+      },
+      {
+        "title": "Prague Guide",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/prague-guide"
+        ],
+        "target": "/expats/expats/czech-news/prague-guide"
+      },
+      {
+        "title": "Culture & Events",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/culture-events"
+        ],
+        "target": "/expats/expats/czech-news/culture-events"
+      },
+      {
+        "title": "Food & Drink",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/food-drink"
+        ],
+        "target": "/expats/expats/czech-news/food-drink"
+      },
+      {
+        "title": "Expat Life",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/expat-life"
+        ],
+        "target": "/expats/expats/czech-news/expat-life"
+      },
+      {
+        "title": "Housing",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/housing"
+        ],
+        "target": "/expats/expats/czech-news/housing"
+      },
+      {
+        "title": "Education",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/education"
+        ],
+        "target": "/expats/expats/czech-news/education"
+      },
+      {
+        "title": "Health",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/health"
+        ],
+        "target": "/expats/expats/czech-news/health"
+      },
+      {
+        "title": "Work",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/work"
+        ],
+        "target": "/expats/expats/czech-news/work"
+      },
+      {
+        "title": "Travel",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/travel"
+        ],
+        "target": "/expats/expats/czech-news/travel"
+      },
+      {
+        "title": "Economy",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/economy"
+        ],
+        "target": "/expats/expats/czech-news/economy"
+      },
+      {
+        "title": "Language",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/language"
+        ],
+        "target": "/expats/expats/czech-news/language"
       }
     ]
   },
@@ -14378,6 +14550,19 @@
       }
     ]
   },
+  "gaoyu.me": {
+    "_name": "Yu Gao",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog"
+        ],
+        "target": "/gaoyu/blog"
+      }
+    ]
+  },
   "gcores.com": {
     "_name": "机核网",
     "www": [
@@ -15300,7 +15485,7 @@
     ]
   },
   "ah.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "kjt": [
       {
         "title": "安徽省科学技术厅",
@@ -15441,7 +15626,7 @@
     ]
   },
   "bjedu.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gh": [
       {
         "title": "通用",
@@ -15455,7 +15640,7 @@
     ]
   },
   "beijing.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "jw": [
       {
         "title": "通知公告",
@@ -15468,7 +15653,7 @@
     ]
   },
   "caac.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "公众留言",
@@ -15481,7 +15666,7 @@
     ]
   },
   "chinatax.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "最新文件",
@@ -15494,7 +15679,7 @@
     ]
   },
   "cq.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "rlsbj": [
       {
         "title": "重庆市人民政府 人力社保局 - 人事考试通知",
@@ -15515,7 +15700,7 @@
     ]
   },
   "cmse.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "飞行任务",
@@ -15528,7 +15713,7 @@
     ]
   },
   "csrc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政府信息公开",
@@ -16045,7 +16230,7 @@
     ]
   },
   "customs.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "拍卖信息 / 海关法规 / 最新文件",
@@ -16058,7 +16243,7 @@
     ]
   },
   "tqyb.com.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "广东省内城市预警信号",
@@ -16079,7 +16264,7 @@
     ]
   },
   "hangzhou.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "政务服务公开",
@@ -16092,7 +16277,7 @@
     ]
   },
   "changsha.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "wlwz": [
       {
         "title": "长沙市人民政府",
@@ -16105,7 +16290,7 @@
     ]
   },
   "jgjcndrc.org.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "中华人民共和国国家发展和改革委员会价格监测中心",
@@ -16118,7 +16303,7 @@
     ]
   },
   "jiangsu.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "wlt": [
       {
         "title": "江苏文旅局审批公告",
@@ -16131,7 +16316,7 @@
     ]
   },
   "jinan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "jnmhc": [
       {
         "title": "获取国家医师资格考试通知",
@@ -16144,7 +16329,7 @@
     ]
   },
   "lswz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "国家粮食和物资储备局",
@@ -16365,7 +16550,7 @@
     ]
   },
   "mee.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "要闻动态",
@@ -16378,7 +16563,7 @@
     ]
   },
   "mem.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "事故及灾害查处",
@@ -16391,7 +16576,7 @@
     ]
   },
   "miit.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "文件发布",
@@ -16412,7 +16597,7 @@
     ]
   },
   "moa.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www.gjs": [
       {
         "title": "中华人民共和国农业农村部国际合作司",
@@ -16535,7 +16720,7 @@
     ]
   },
   "moe.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "司局通知",
@@ -16549,7 +16734,7 @@
     ]
   },
   "mof.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gss": [
       {
         "title": "关税政策文件",
@@ -16562,7 +16747,7 @@
     ]
   },
   "moj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "立法意见征集",
@@ -16576,7 +16761,7 @@
     ]
   },
   "ndrc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "发展改革工作",
@@ -17327,7 +17512,7 @@
     ]
   },
   "nea.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "发展规划司",
@@ -17340,7 +17525,7 @@
     ]
   },
   "npc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "通用",
@@ -17353,7 +17538,7 @@
     ]
   },
   "pbc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "沟通交流",
@@ -17382,7 +17567,7 @@
     ]
   },
   "pudong.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政务公开-浦东新区",
@@ -17395,7 +17580,7 @@
     ]
   },
   "samr.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "xgzlyhd": [
       {
         "title": "留言咨询",
@@ -17408,7 +17593,7 @@
     ]
   },
   "sh.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "fgw": [
       {
         "title": "上海市发展和改革委员会",
@@ -17515,7 +17700,7 @@
     ]
   },
   "sz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "xxgk": [
       {
         "title": "深圳市考试院",
@@ -17547,8 +17732,21 @@
       }
     ]
   },
+  "szlh.gov.cn": {
+    "_name": "深圳市罗湖区人民政府",
+    ".": [
+      {
+        "title": "深圳市罗湖区人民政府",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/zwfw/zffw/:caty"
+        ],
+        "target": "/gov/shenzhen/szlh/zwfw/zffw/:caty"
+      }
+    ]
+  },
   "mztoday.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "今日绵竹",
@@ -17561,7 +17759,7 @@
     ]
   },
   "stats.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "国家统计局 通用",
@@ -17574,7 +17772,7 @@
     ]
   },
   "suzhou.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政府信息公开文件",
@@ -17596,7 +17794,7 @@
     ]
   },
   "taiyuan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "rsj": [
       {
         "title": "太原市人力资源和社会保障局政府公开信息",
@@ -17609,7 +17807,7 @@
     ]
   },
   "tjftz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "天津港保税区-公告",
@@ -17622,7 +17820,7 @@
     ]
   },
   "tj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "hrss": [
       {
         "title": "天津人才工作网-公告",
@@ -17635,7 +17833,7 @@
     ]
   },
   "wuhan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "武汉要闻",
@@ -17650,7 +17848,7 @@
     ]
   },
   "zjks.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "通知",
@@ -17665,7 +17863,7 @@
     ]
   },
   "www.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "信息稿件",
@@ -17704,7 +17902,7 @@
     ]
   },
   "ningbo.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gzw": [
       {
         "title": "宁波市国资委-公告",
@@ -17727,7 +17925,7 @@
     ]
   },
   "zj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "search": [
       {
         "title": "浙江省人民政府-全省政府网站统一搜索",
@@ -18423,12 +18621,77 @@
     "_name": "哈尔滨工业大学",
     "hitgs": [
       {
-        "title": "研究生院通知公告",
+        "title": "研究生院",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/*"
+          "/",
+          "/:id/list.htm"
         ],
-        "target": "/hit/hitgs"
+        "target": "/hitparams=>{const id=params.id;return`/hit/hitgs${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/list.htm"
+        ],
+        "target": "/hit/hitgs/tzgg"
+      },
+      {
+        "title": "综合新闻",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zhxw/list.htm"
+        ],
+        "target": "/hit/hitgs/zhxw"
+      },
+      {
+        "title": "高水平课程与学术交流",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gspkcyxsjl/list.htm"
+        ],
+        "target": "/hit/hitgs/gspkcyxsjl"
+      },
+      {
+        "title": "国家政策",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjzc/list.htm"
+        ],
+        "target": "/hit/hitgs/gjzc"
+      },
+      {
+        "title": "规章制度",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17546/list.htm"
+        ],
+        "target": "/hit/hitgs/17546"
+      },
+      {
+        "title": "办事流程",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17547/list.htm"
+        ],
+        "target": "/hit/hitgs/17547"
+      },
+      {
+        "title": "常见问题",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17548/list.htm"
+        ],
+        "target": "/hit/hitgs/17548"
+      },
+      {
+        "title": "常见下载",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17549/list.htm"
+        ],
+        "target": "/hit/hitgs/17549"
       }
     ],
     "jwc": [
@@ -18667,6 +18930,20 @@
           "/"
         ],
         "target": "/hkushop/vinyl"
+      }
+    ]
+  },
+  "hlju.edu.cn": {
+    "_name": "黑龙江大学",
+    "hdxw": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category.htm",
+          "/"
+        ],
+        "target": "/hlju/news/:category"
       }
     ]
   },
@@ -21256,6 +21533,19 @@
       }
     ]
   },
+  "jetbrains.com": {
+    "_name": "JetBrains",
+    "youtrack": [
+      {
+        "title": "YouTrack Issue Comments",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/issue/:issueId"
+        ],
+        "target": "/jetbrains/youtrack/comments/:issueId"
+      }
+    ]
+  },
   "jianshu.com": {
     "_name": "简书",
     "www": [
@@ -22041,7 +22331,7 @@
       }
     ]
   },
-  "kemono.su": {
+  "kemono.cr": {
     "_name": "Kemono",
     ".": [
       {
@@ -22050,7 +22340,7 @@
         "source": [
           "/"
         ],
-        "target": "/kemono/kemono"
+        "target": "/kemono/:source?/:id?/:type?"
       },
       {
         "title": "Posts",
@@ -22058,7 +22348,7 @@
         "source": [
           "/:source/user/:id"
         ],
-        "target": "/kemono/kemono/:source/:id"
+        "target": "/kemono/:source/:id"
       },
       {
         "title": "Posts",
@@ -22066,7 +22356,7 @@
         "source": [
           "/:source/user/:id/announcements"
         ],
-        "target": "/kemono/kemono/:source/:id/announcements"
+        "target": "/kemono/:source/:id/announcements"
       },
       {
         "title": "Posts",
@@ -22074,7 +22364,7 @@
         "source": [
           "/:source/user/:id/fancards"
         ],
-        "target": "/kemono/kemono/:source/:id/fancards"
+        "target": "/kemono/:source/:id/fancards"
       }
     ]
   },
@@ -22129,6 +22419,15 @@
           "/blog/"
         ],
         "target": "/kiro/blog"
+      },
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/",
+          "/changelog/"
+        ],
+        "target": "/kiro/changelog"
       }
     ]
   },
@@ -23485,6 +23784,19 @@
           "/user/book/shelf"
         ],
         "target": "/manhuagui/subscribe"
+      }
+    ]
+  },
+  "manus.im": {
+    "_name": "Manus",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/manus/blog"
       }
     ]
   },
@@ -27617,6 +27929,16 @@
         ],
         "target": "/neu/news/:type"
       }
+    ],
+    "yz": [
+      {
+        "title": "研究生招生信息网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/neu/yz/:type"
+      }
     ]
   },
   "news.cn": {
@@ -27728,6 +28050,20 @@
           "/"
         ],
         "target": "/newsmarket/:category?"
+      }
+    ]
+  },
+  "newswav.com": {
+    "_name": "Newswav",
+    ".": [
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/latest",
+          "/"
+        ],
+        "target": "/newswav/"
       }
     ]
   },
@@ -32085,6 +32421,19 @@
       }
     ]
   },
+  "rockthejvm.com": {
+    "_name": "Rock the JVM",
+    ".": [
+      {
+        "title": "Article",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/articles"
+        ],
+        "target": "/rockthejvm/articles"
+      }
+    ]
+  },
   "rodong.rep.kp": {
     "_name": "Rodong Sinmun 劳动新闻",
     ".": [
@@ -34182,6 +34531,19 @@
           "/"
         ],
         "target": "/sorrycc/"
+      }
+    ]
+  },
+  "sotwe.com": {
+    "_name": "X (Twitter)",
+    "www": [
+      {
+        "title": "User timeline - Sotwe",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:id"
+        ],
+        "target": "/sotwe/user/:id"
       }
     ]
   },
@@ -36923,6 +37285,27 @@
       }
     ]
   },
+  "thewirehindi.com": {
+    "_name": "The Wire Hindi",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category/*"
+        ],
+        "target": "/thewirehindi/category/:category"
+      },
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/thewirehindi/"
+      }
+    ]
+  },
   "thoughtworks.com": {
     "_name": "ThoughtWorks",
     "www": [
@@ -36947,6 +37330,76 @@
           "/%E6%97%A5%E7%A8%8B%E8%A1%A8"
         ],
         "target": "/thwiki/calendar"
+      }
+    ]
+  },
+  "tidb.net": {
+    "_name": "TiDB 社区",
+    ".": [
+      {
+        "title": "专栏分类",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog",
+          "/blog/c/:category"
+        ],
+        "target": "/tidbparams=>{const category=params.category;return`/tidb/blog/c${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "全部文章",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/tidb/blog/c/latest"
+      },
+      {
+        "title": "管理与运维",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/management-and-operation"
+        ],
+        "target": "/tidb/blog/c/management-and-operation"
+      },
+      {
+        "title": "实践案例",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/practical-case"
+        ],
+        "target": "/tidb/blog/c/practical-case"
+      },
+      {
+        "title": "架构选型",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/architecture-selection"
+        ],
+        "target": "/tidb/blog/c/architecture-selection"
+      },
+      {
+        "title": "原理解读",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/principle-interpretation"
+        ],
+        "target": "/tidb/blog/c/principle-interpretation"
+      },
+      {
+        "title": "应用开发",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/application-development"
+        ],
+        "target": "/tidb/blog/c/application-development"
+      },
+      {
+        "title": "社区动态",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/community-feeds"
+        ],
+        "target": "/tidb/blog/c/community-feeds"
       }
     ]
   },
@@ -38052,7 +38505,7 @@
     "_name": "中国石油大学（华东）",
     "jwc": [
       {
-        "title": "教务处通知公告",
+        "title": "教务处",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/",
@@ -40767,6 +41220,19 @@
           "/:author"
         ],
         "target": "/zhiy/posts/:author"
+      }
+    ]
+  },
+  "zhizhuan100.com.cn": {
+    "_name": "智篆商业",
+    "www": [
+      {
+        "title": "analytic",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/analysis"
+        ],
+        "target": "/zhizhuan100/analytic"
       }
     ]
   },
