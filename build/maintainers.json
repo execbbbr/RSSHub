@@ -254,6 +254,9 @@
     "nczitzk",
     "cscnk52"
   ],
+  "/6v123/:category{.+}?": [
+    "nczitzk"
+  ],
   "/6v123/latestMovies": [
     "tc9011"
   ],
@@ -292,6 +295,9 @@
   "/9to5/:subsite/:tag?": [],
   "/a9vg/:category{.+}?": [
     "monnerHenster",
+    "nczitzk"
+  ],
+  "/aa1/60s/:category?": [
     "nczitzk"
   ],
   "/aamacau/:category?/:id?": [],
@@ -771,6 +777,9 @@
     "youyou-sudo",
     "honue"
   ],
+  "/banshujiang/:category{.+}?": [
+    "nczitzk"
+  ],
   "/banyuetan/:id?": [
     "nczitzk"
   ],
@@ -1115,6 +1124,9 @@
   ],
   "/bookfere/:category": [
     "OdinZhang"
+  ],
+  "/bookwalker/search/:filter?": [
+    "nczitzk"
   ],
   "/booru/mmda/tags/:tags?": [
     "N78Wy"
@@ -1730,6 +1742,9 @@
   "/comicskingdom/:name": [
     "stjohnjohnson"
   ],
+  "/commonhealth/": [
+    "johan456789"
+  ],
   "/consumer/:category?/:language?/:keyword?": [
     "nczitzk"
   ],
@@ -2065,6 +2080,9 @@
     "blade0910"
   ],
   "/dgjyw*": [],
+  "/dgut/jwb/:type?": [
+    "1200522928"
+  ],
   "/dhu/jiaowu/news/:type?": [
     "KiraKiseki"
   ],
@@ -2094,6 +2112,9 @@
   ],
   "/digitalcameraworld/news": [
     "EthanWng97"
+  ],
+  "/digitalpolicyalert/activity-tracker/:filters?": [
+    "nczitzk"
   ],
   "/dingshao/share/:shortId": [
     "TonyRL"
@@ -2456,6 +2477,12 @@
   "/elasticsearch-cn/:params?": [
     "nczitzk"
   ],
+  "/elecfans/article/:atype": [
+    "tian051011"
+  ],
+  "/elecfans/soft/:atype": [
+    "tian051011"
+  ],
   "/eleduck/jobs": [
     "sfyumi"
   ],
@@ -2468,6 +2495,9 @@
   "/elsevier/:journal": [],
   "/embassy/:country/:city?": [
     "HenryQW"
+  ],
+  "/englishhome/": [
+    "johan456789"
   ],
   "/enterprisecraftsmanship/archives": [
     "liyaozhong"
@@ -2832,7 +2862,8 @@
   ],
   "/gamer/hot/:bsn": [
     "nczitzk",
-    "TonyRL"
+    "TonyRL",
+    "kennyfong19931"
   ],
   "/gamer/ani/anime/:sn": [
     "maple3142",
@@ -3038,6 +3069,9 @@
   ],
   "/gitpod/changelog": [
     "TonyRL"
+  ],
+  "/gitstar-ranking/:category?": [
+    "nczitzk"
   ],
   "/globallawreview/": [
     "nczitzk"
@@ -3851,6 +3885,9 @@
   "/hubu/zhxy/:category{.+}?": [
     "nczitzk"
   ],
+  "/hudsonrivertrading/blog/:section?": [
+    "johan456789"
+  ],
   "/huggingface/blog-community/:sort?": [
     "yuguorui"
   ],
@@ -3861,8 +3898,9 @@
     "cesaryuan",
     "zcf0508"
   ],
-  "/huggingface/daily-papers": [
-    "zeyugao"
+  "/huggingface/daily-papers/:cycle?/:voteFliter?": [
+    "zeyugao",
+    "ovo-tim"
   ],
   "/hunanpea/rsks/:guid": [
     "TonyRL"
@@ -4068,6 +4106,9 @@
   ],
   "/imiker/ask/jinghua": [
     "nczitzk"
+  ],
+  "/immich/cursed-knowledge": [
+    "TonyRL"
   ],
   "/imop/tianshu": [
     "zhkgo"
@@ -5095,6 +5136,9 @@
   "/mihoyo/ys/:location?/:category?": [
     "nczitzk"
   ],
+  "/mihoyo/zzz/:location?/:category?": [
+    "Yeye-0426"
+  ],
   "/mindmeister/:category?/:language?": [
     "TonyRL"
   ],
@@ -5156,6 +5200,9 @@
   "/misskon/top/:k": [
     "Urabartin"
   ],
+  "/mit/hanlab/blog": [
+    "johan456789"
+  ],
   "/mittrchina/:type?": [
     "EsuRt",
     "queensferryme"
@@ -5191,6 +5238,9 @@
     "TonyRL"
   ],
   "/modelscope/datasets": [
+    "TonyRL"
+  ],
+  "/modelscope/learn": [
     "TonyRL"
   ],
   "/modelscope/models": [
@@ -5528,6 +5578,9 @@
   ],
   "/nintendo/system-update": [
     "hoilc"
+  ],
+  "/nio/nioradio/:albumid": [
+    "marcosteam"
   ],
   "/nippon/:category?": [
     "laampui"
@@ -6759,6 +6812,9 @@
   "/scoop/apps/:query?": [
     "nczitzk"
   ],
+  "/scpta/news/:category": [
+    "Yeye-0426"
+  ],
   "/sctv/programme/:id?/:limit?/:isFull?": [
     "nczitzk"
   ],
@@ -7009,6 +7065,9 @@
   ],
   "/shu/journals/society/current": [
     "CNYoki"
+  ],
+  "/shu/xxgk/:type?": [
+    "GhhG123"
   ],
   "/shu/xykd/:type?": [
     "GhhG123"
@@ -8702,6 +8761,9 @@
   "/xunhupay/blog": [
     "Joey"
   ],
+  "/xwenming/:category?": [
+    "nczitzk"
+  ],
   "/xys/new": [
     "wenzhenl"
   ],
@@ -9074,6 +9136,9 @@
   ],
   "/zju/physics/:type": [
     "Caicailiushui"
+  ],
+  "/zju/sis/:type": [
+    "Alex222222222222"
   ],
   "/zjut/news/:type": [
     "junbaor",
