@@ -115,10 +115,12 @@ const getDiscountNum = async (platform) => {
     const data = response.data.data;
     let totalNum = 0;
     for (const index in data) {
-        if (data[index].platformAlias.toLocaleLowerCase() === platform.toLocaleLowerCase()) {
-            totalNum = data[index].gameNum;
-            break;
+        if (data[index].platformAlias.toLocaleLowerCase() !== platform.toLocaleLowerCase()) {
+            continue;
         }
+
+        totalNum = data[index].gameNum;
+        break;
     }
     return totalNum;
 };
@@ -177,11 +179,11 @@ export const route: Route = {
 
 | filter | switch | ps4 | ps5 | steam |
 | ------ | ------ | --- | --- | ----- |
-| all    | ✔     | ✔  | ✔  | ✔    |
-| jx     | ✔     | ✔  | ❌  | ✔    |
-| sd     | ✔     | ✔  | ✔  | ✔    |
-| dl     | ❌     | ✔  | ❌  | ✔    |
-| vip    | ❌     | ❌  | ✔  | ❌    |
+| all    | ✔      | ✔   | ✔   | ✔     |
+| jx     | ✔      | ✔   | ❌  | ✔     |
+| sd     | ✔      | ✔   | ✔   | ✔     |
+| dl     | ❌     | ✔   | ❌  | ✔     |
+| vip    | ❌     | ❌  | ✔   | ❌    |
 
 | 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |
 | ---- | ------------ | ---- | ---- | ---- |

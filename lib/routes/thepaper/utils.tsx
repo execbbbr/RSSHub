@@ -38,7 +38,7 @@ export default {
             let description = contentDetail.content || contentDetail.summary || contentDetail.desc || '';
 
             if (contentDetail.videos) {
-                description = description + contentDetail.summary;
+                description += contentDetail.summary;
             }
             if (useOldMode) {
                 if (contentDetail.videos) {
@@ -61,20 +61,20 @@ export default {
                 category: [...(contentDetail.tagList?.map((t) => t.tag) ?? []), contentDetail?.nodeInfo?.name ?? []],
                 pubDate,
                 author: contentDetail.author || '',
-                //                media: {
-                //                    content: {
-                //                        url: item.pic || contentDetail.videos?.coverUrl || contentDetail.bigPic,
-                //                    },
-                //                    thumbnails: {
-                //                        url: item.sharePic || contentDetail.sharePic,
-                //                    },
-                //                },
+                media: {
+                    content: {
+                        url: item.pic || contentDetail.videos?.coverUrl || contentDetail.bigPic,
+                    },
+                    thumbnails: {
+                        url: item.sharePic || contentDetail.sharePic,
+                    },
+                },
             };
-            //            if (contentDetail.voiceInfo?.isHaveVoice) {
-            //                rss_item.enclosure_type = 'audio/mpeg';
-            //                rss_item.enclosure_url = contentDetail.voiceInfo.voiceSrc;
-            //                rss_item.itunes_item_image = item.pic || contentDetail.videos?.coverUrl;
-            //            }
+            if (contentDetail.voiceInfo?.isHaveVoice) {
+                rss_item.enclosure_type = 'audio/mpeg';
+                rss_item.enclosure_url = contentDetail.voiceInfo.voiceSrc;
+                rss_item.itunes_item_image = item.pic || contentDetail.videos?.coverUrl;
+            }
             return rss_item;
         });
     },
